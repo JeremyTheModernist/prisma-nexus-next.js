@@ -157,3 +157,5 @@ The package.json for the `/frontend` is self-explanatory. For the `/backend`, I 
 - [Typescript with Next.js](https://nextjs.org/docs/basic-features/typescript)
 
 - [GraphQL Fragments with Apollo Client](https://www.apollographql.com/docs/react/data/fragments/#example-usage)
+
+- [Prisma Connection URLs](https://www.prisma.io/docs/reference/database-reference/connection-urls)
