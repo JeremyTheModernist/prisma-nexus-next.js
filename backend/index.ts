@@ -3,12 +3,14 @@ import {schema} from './api/schema';
 import {context, Context} from './api/context'
 
 // pass the prisma context in here so your API can access it for db operations
-const server = new ApolloServer({schema, context});
+const server = new ApolloServer({schema, context, cors: {
+  origin: '*',
+}});
 // port is defined by Heroku
 const port = process.env.PORT || 4001
 
 server.listen({
-  port
+  port,
 }).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`)
   })
